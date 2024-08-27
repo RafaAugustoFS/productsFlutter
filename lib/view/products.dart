@@ -9,13 +9,15 @@ class Products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("My Cart"),
         centerTitle: true,
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Padding(
